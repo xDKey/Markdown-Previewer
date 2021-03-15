@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import marked from 'marked';
 import Preview from '../Previewer/Previewer'
 import Editor from '../Editor/Editor'
+import './App.css'
+import placeHolder from './placeHolder'
+
 
 function App() {
-  const placeHolder = '# Welcome to my React Markdown Previewer!'
-
   const [rawText, setRawText] = useState(placeHolder)
   const [markedText, setMarkedText] = useState(null)
 
@@ -16,7 +17,7 @@ function App() {
   [rawText])
 
   return (
-    <div className="App">
+    <div className="markdown-previewer">
       <Editor setRawText={setRawText} rawText={rawText}/>
       <Preview markedText={markedText}/>
     </div>

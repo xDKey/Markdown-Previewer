@@ -1,0 +1,21 @@
+#preview{
+    width: 50%;
+    padding: 20px;
+    background: cornsilk;
+
+    overflow: scroll;
+}
+
+pre{
+    background: white;
+    padding: 5px
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 5px
+}
